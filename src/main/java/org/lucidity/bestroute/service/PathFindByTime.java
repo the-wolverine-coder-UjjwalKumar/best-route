@@ -67,20 +67,6 @@ public class PathFindByTime implements PathFinding {
                 graphEdgeDetailsResList.add(graphEdgeDetailsRes);
                 adjList.put(Constants.RESTAURANT + i, graphEdgeDetailsResList);
 
-//                appending for delivery captain
-//                List<Map<String,Double>> adjEdgeMap = adjList.getOrDefault(deliveryCaptain.getCaptainName(), new ArrayList<>());
-//                Map<String,Double> map = new HashMap<>();
-//                map.put(Constants.RESTAURANT+i, avgTimeReq);
-//                adjEdgeMap.add(map);
-//                adjList.put(deliveryCaptain.getCaptainName(), adjEdgeMap);
-
-//                appending same for reverse for R1 to delivery captain
-//                List<Map<String,Double>> adjEdgeResMap = adjList.getOrDefault(Constants.RESTAURANT+i, new ArrayList<>());
-//                Map<String,Double> resMap = new HashMap<>();
-//                resMap.put(deliveryCaptain.getCaptainName(), avgTimeReq);
-//                adjEdgeResMap.add(resMap);
-//                adjList.put(Constants.RESTAURANT+i, adjEdgeResMap);
-
                 i++;
 
             }
@@ -109,20 +95,6 @@ public class PathFindByTime implements PathFinding {
                     GraphEdgeDetails graphEdgeDetailsRes = GraphEdgeDetails.builder().destination(Constants.CUSTOMER + i).weight(avgTimeReq).build();
                     graphEdgeDetailsResList.add(graphEdgeDetailsRes);
                     adjList.put(Constants.RESTAURANT + k, graphEdgeDetailsResList);
-
-//                    // appending for C1...
-//                    List<Map<String,Double>> adjEdgeMap = adjList.getOrDefault(Constants.CUSTOMER+i, new ArrayList<>());
-//                    Map<String,Double> resMap = new HashMap<>();
-//                    resMap.put(Constants.RESTAURANT+k, avgTimeReq);
-//                    adjEdgeMap.add(resMap);
-//                    adjList.put(Constants.CUSTOMER+i, adjEdgeMap);
-//
-//                    // appending for R1...
-//                    List<Map<String,Double>> adjEdgeResMap = adjList.getOrDefault(Constants.RESTAURANT+k, new ArrayList<>());
-//                    Map<String,Double> map = new HashMap<>();
-//                    map.put(Constants.CUSTOMER+i, avgTimeReq);
-//                    adjEdgeResMap.add(map);
-//                    adjList.put(Constants.RESTAURANT+k, adjEdgeResMap);
 
                     k++;
                 }
