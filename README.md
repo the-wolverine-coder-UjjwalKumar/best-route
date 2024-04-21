@@ -29,9 +29,8 @@ After running the project, the server will be available on port 5600. Use the pr
    - C1: KR Puram ("latitude": "13.00472", "longitude": "77.68759")
    - C2: Whitefield ("latitude": "12.97138", "longitude": "77.75013")
 5. Assigned restaurants are picked randomly (equal chance to each restaurant) and are ready to serve the order, with its `average_preperation_time`.
-6.
-## Code Structure
 
+## Code Structure
 ![Code Structure pic](https://raw.githubusercontent.com/the-wolverine-coder-UjjwalKumar/best-route/main/code_structure.png)
 
 ## Production Quality
