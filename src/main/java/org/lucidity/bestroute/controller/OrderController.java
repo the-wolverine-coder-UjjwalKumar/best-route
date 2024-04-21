@@ -17,6 +17,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
+
     @GetMapping()
     public ApiResponse<List<OrderInfo>> getOrders(@RequestParam("status") OrderStatus status) {
         return new ApiResponse<>(orderService.getOrders(status));
@@ -37,7 +38,7 @@ public class OrderController {
         return orderService.resolveBestRoute();
     }
 
-    @GetMapping("/best-route")
+    @PostMapping("/best-route")
     public ApiResponse<Object> resolveBestRoute(@RequestBody DeliverOrderRequest deliverOrderRequest) {
         return orderService.resolveBestRoute(deliverOrderRequest);
     }

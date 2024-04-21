@@ -6,6 +6,7 @@ public class HaverSineUtils {
 
     public static final double averageSpeed = 20; // 20Km/Hr
 
+    // fetching distance between two geo location.
     public static double distanceTo(GeoLocation location1, GeoLocation location2) {
         // Radius of the Earth in kilometers
         double earthRadius = 6371;

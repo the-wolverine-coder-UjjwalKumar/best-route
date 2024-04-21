@@ -5,6 +5,7 @@ import org.lucidity.bestroute.entity.model.*;
 import org.lucidity.bestroute.entity.request.DeliverOrderRequest;
 import org.lucidity.bestroute.entity.response.ApiResponse;
 import org.lucidity.bestroute.entity.response.ShortestDeliveryTimeResponse;
+import org.lucidity.bestroute.service.impl.PathFindByTime;
 import org.lucidity.bestroute.utils.InitializeData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -59,6 +60,7 @@ public class OrderService {
 
             if (Objects.nonNull(deliverOrderRequest)) {
 
+                // Building orders list by assigning randomly restaurants
                 List<OrderInfo> orders = buildOrderDetails(deliverOrderRequest);
                 Optional<ShortestDeliveryTimeResponse> routeResponse = getBestRoute(
                         deliverOrderRequest.getCaptainDetails(), orders);
@@ -78,6 +80,8 @@ public class OrderService {
     public Optional<ShortestDeliveryTimeResponse> getBestRoute(List<DeliveryCaptain> captainDetails, List<OrderInfo> orders) {
         try {
             if (!CollectionUtils.isEmpty(captainDetails) && !CollectionUtils.isEmpty(orders)) {
+                // getting delivery captain (strategy used here randomly but equal
+                // chance is provided to all available to take orders)
                 DeliveryCaptain deliveryCaptain = getDeliveryCaptain(captainDetails);
 
                 return pathFindByTime.findBestRoute(deliveryCaptain, orders, restaurantInfo);
@@ -101,6 +105,7 @@ public class OrderService {
 
     public List<OrderInfo> buildOrderDetails(DeliverOrderRequest deliverOrderRequest) {
         try {
+            // appending restaurantInfo served as DB
             restaurantInfo = getRestaurantInfo(deliverOrderRequest);
 
             List<OrderInfo> orderInfoList = new ArrayList<>();
@@ -108,6 +113,7 @@ public class OrderService {
                 long orderId = 9988L;
                 for (Customer customer : deliverOrderRequest.getCustomers()) {
 
+                    // get randomly restaurant (equal chance to each restaurant)
                     OrderInfo orderInfo = OrderInfo.builder()
                             .orderId(orderId++)
                             .restaurantId(getRestaurantId(restaurantInfo))
