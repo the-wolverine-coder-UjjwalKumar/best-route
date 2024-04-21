@@ -1,0 +1,120 @@
+{
+  "customer_data": [
+    {
+      "customer_id": "00120",
+      "name": "Ujjwal Kumar",
+      "contact_details": {
+        "phone_number": "9922993311",
+        "email": "uk@gmail.com"
+      },
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "1234.45",
+          "longitude": "0923.36"
+        }
+      }
+    },
+    {
+      "customer_id": "00124",
+      "name": "C1",
+      "contact_details": {
+        "phone_number": "9988776655",
+        "email": "c1@gmail.com"
+      },
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "3214.45",
+          "longitude": "9023.36"
+        }
+      }
+    },
+    {
+      "customer_id": "00128",
+      "name": "C2",
+      "contact_details": {
+        "phone_number": "9944332211",
+        "email": "c2@gmail.com"
+      },
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "5434.45",
+          "longitude": "7645.36"
+        }
+      }
+    }
+  ],
+  "restaurant_data": [
+    {
+      "restaurant_id": "3211",
+      "restaurant_name": "Punjabi Dhaba",
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "6534.45",
+          "longitude": "8732.36"
+        }
+      },
+      "contact_details": {
+        "phone_number": "9876789612",
+        "email": "punjabidhaba@gmail.com"
+      }
+    },
+    {
+      "restaurant_id": "3298",
+      "restaurant_name": "R1",
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "5666.45",
+          "longitude": "5432.36"
+        }
+      },
+      "contact_details": {
+        "phone_number": "9876789612",
+        "email": "r2@gmail.com"
+      }
+    },
+    {
+      "restaurant_id": "3231",
+      "restaurant_name": "R2",
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "7325.45",
+          "longitude": "8429.36"
+        }
+      },
+      "contact_details": {
+        "phone_number": "9876789612",
+        "email": "r2@gmail.com"
+      }
+    }
+  ]
+}

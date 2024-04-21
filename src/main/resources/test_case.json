@@ -1,0 +1,110 @@
+{
+  "captain_data": [
+    {
+      "delivery_captain_id": "1234",
+      "captain_name": "Aman",
+      "contact_details": {
+        "phone_number": "9944332211",
+        "email": "aman@gmail.com"
+      },
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "12.93453",
+          "longitude": "77.62657"
+        }
+      },
+      "captain_live_location": {
+        "latitude": "12.85492",
+        "longitude": "77.78811"
+      },
+      "available": true
+    }
+  ],
+  "restaurant_data": [
+    {
+      "restaurant_id": "3298",
+      "restaurant_name": "R1",
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "12.93371",
+          "longitude": "77.66219"
+        }
+      },
+      "contact_details": {
+        "phone_number": "9876789612",
+        "email": "r1@gmail.com"
+      },
+      "avg_preparation_time": 0.8
+    },
+    {
+      "restaurant_id": "3231",
+      "restaurant_name": "R2",
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "12.95184",
+          "longitude": "77.69957"
+        }
+      },
+      "contact_details": {
+        "phone_number": "9876789612",
+        "email": "r2@gmail.com"
+      },
+      "avg_preparation_time": 0.5
+    }
+  ],
+  "customer_data": [
+    {
+      "customer_id": "00124",
+      "name": "C1",
+      "contact_details": {
+        "phone_number": "9988776655",
+        "email": "c1@gmail.com"
+      },
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "13.00472",
+          "longitude": "77.68759"
+        }
+      }
+    },
+    {
+      "customer_id": "00128",
+      "name": "C2",
+      "contact_details": {
+        "phone_number": "9944332211",
+        "email": "c2@gmail.com"
+      },
+      "address": {
+        "house_number": "010",
+        "street": "abc-street",
+        "city": "bengaluru",
+        "state": "karnataka",
+        "pin_code": "560037",
+        "location": {
+          "latitude": "12.97138",
+          "longitude": " 77.75013"
+        }
+      }
+    }
+  ]
+}
